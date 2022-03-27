@@ -1,0 +1,234 @@
+/*Start Global Classes and Rules*/
+@font-face {
+  font-family: "fira-reg";
+  src: url("../fonts/FiraSans-Regular.otf");
+}
+@font-face {
+  font-family: "fira-bold";
+  src: url("../fonts/FiraSans-Bold.otf");
+}
+@font-face {
+  font-family: "fira-itelic";
+  src: url("../fonts/FiraSans-Italic.otf");
+}
+@font-face {
+  font-family: "opensans-reg";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "monserat-med";
+  src: url("../fonts/Montserrat-Medium.otf");
+}
+/*End Global Classes and Rules*/
+/*Start Upper-Bar Section*/
+.upper-bar {
+  background-color: #232323;
+  padding: 7px 0;
+  color: #FFF;
+}
+.upper-bar img {
+  display: inline-block;
+  margin-right: 6px;
+}
+.upper-bar span {
+  display: inline-block;
+  border: 3px solid #FFF;
+  padding: 4px 25px;
+  text-transform: uppercase;
+  font-family: "fira-bold";
+  letter-spacing: 1px;
+  font-size: 19px;
+  cursor: pointer;
+}
+.upper-bar button {
+  background-color: #f86101;
+  color: #FFF;
+  padding: 3px 10px;
+  border: 2px solid #f86101;
+  font-family: "monserat-med";
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+/*End Upper-Bar Section*/
+/*Start Header Section*/
+header {
+  background-image: url("../images/header-bg.png");
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  color: #FFF;
+  padding: 80px 0;
+}
+header .overlay h1 {
+  font-family: "fira-bold";
+  font-size: 48px;
+  width: 60%;
+  margin: 20px auto;
+}
+header .overlay h3 {
+  font-family: "fira-reg";
+  font-size: 25px;
+  width: 80%;
+  margin: 20px auto;
+}
+header .overlay button {
+  background-color: #f86101;
+  color: #FFF;
+  padding: 12px 20px;
+  border: 2px solid #f86101;
+  font-family: "fira-bold";
+  font-size: 23px;
+}
+
+/*End Header Section*/
+/*Start Services Section*/
+.services {
+  padding: 45px 0;
+  background-color: #fbfbfb;
+}
+.services h2 {
+  font-family: "fira-bold";
+  color: #666;
+  margin-bottom: 30px;
+}
+.services h2 span {
+  color: #f86101;
+  cursor: pointer;
+}
+.services .service h4 {
+  font-family: "fira-bold";
+  color: #777;
+  margin-bottom: 20px;
+}
+.services .service p {
+  font-family: "opensans-reg";
+  line-height: 1.7;
+  color: #999;
+  width: 80%;
+  margin: 10px auto 2px;
+}
+
+/*End Services Section*/
+/*Start CTA Section*/
+.cta h3 {
+  font-family: "fira-bold";
+  font-size: 48px;
+  width: 48%;
+  margin: 25px auto 15px;
+}
+.cta p {
+  font-family: "fira-itelic";
+  font-style: italic;
+  font-size: 22px;
+  color: #666;
+}
+.cta p span {
+  font-family: "fira-bold";
+  color: #222;
+}
+.cta button {
+  background-color: #f86101;
+  color: #FFF;
+  padding: 12px 20px;
+  border: 2px solid #f86101;
+  font-family: "fira-bold";
+  font-size: 23px;
+  margin-bottom: 35px;
+}
+
+/*End CTA Section*/
+/*Start Copy Section*/
+.copy {
+  display: block;
+  background-color: #000;
+  color: #FFF;
+  padding: 5px 8px;
+  font-family: "fira-bold";
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/*End Copy Section*/
+/*model */
+.body-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  left: 100%;
+  display: block;
+  z-index: 5;
+}
+
+.model {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  width: 450px;
+  height: auto;
+  background-color: #f8f9fa;
+  z-index: 6;
+  display: none;
+}
+.model h3 {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: #FFF;
+  padding: 18px;
+  font-size: 25px;
+  font-family: "fira-bold";
+  position: relative;
+  margin-bottom: 45px;
+}
+.model h3:after {
+  position: absolute;
+  bottom: -66%;
+  left: 44%;
+  content: "";
+  border: 22px solid;
+  border-top-color: rgba(0, 0, 0, 0.76);
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.model input[type="text"],
+.model input[type="tel"] {
+  background-color: #FFF;
+  border: 2px solid #FFF;
+  font-family: "fira-reg";
+  font-size: 18px;
+  padding-left: 6px;
+  height: 40px;
+  width: 70%;
+  color: #999;
+}
+.model input[type="submit"] {
+  margin-top: 30px;
+  width: 70%;
+  font-family: "fira-bold";
+  background-color: #f86101;
+  border: 2px solid #f86101;
+  color: #FFF;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+/*End Model*/
+
+/*# sourceMappingURL=style.css.map */
